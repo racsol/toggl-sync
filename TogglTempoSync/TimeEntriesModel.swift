@@ -42,8 +42,9 @@ class TimeEntriesModel: ObservableObject {
         do {
             loading = true
             timeEntries = []
-            let togglTimeEntries = try await network.getTogglEntries(date: date)
-            let tempoTimeEntries = try await network.getTempoEntries(date: date)
+            async let togglTask = try network.getTogglEntries(date: date)
+            async let tempoTask = try network.getTempoEntries(date: date)
+            let (togglTimeEntries, tempoTimeEntries) = try await (togglTask, tempoTask)
             timeEntries = togglTimeEntries.map{ (item) -> TimeEntry in
                 let formatter = ISO8601DateFormatter()
                 let startDate = formatter.date(from: item.start)
