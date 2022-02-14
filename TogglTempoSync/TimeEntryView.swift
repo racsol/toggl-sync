@@ -37,11 +37,7 @@ struct TimeEntryView: View {
                 Spacer()
                 
                 if let duration = duration {
-                    Text(duration)
-                        .foregroundColor(.white)
-                        .padding(4)
-                        .background(Color(UIColor.tintColor))
-                        .cornerRadius(5)
+                    DurationView(duration: duration)
                 } else {
                     ZStack {
                         Circle().fill(Color.green.opacity(0.35)).frame(width: 25, height: 25).scaleEffect(self.animate ? 1 : 0)

@@ -91,4 +91,10 @@ class TimeEntriesModel: ObservableObject {
         }
         await reload(date: date)
     }
+    
+    func getTotalDuration() -> String {
+        return Double(timeEntries.map{ time in
+            return max(time.duration, 0)
+        }.reduce(0, +)).asString(style: .abbreviated)
+    }
 }

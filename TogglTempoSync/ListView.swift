@@ -48,11 +48,11 @@ struct ListView: View {
             .padding()
             DatePicker(selection: $date, in: ...Date(), displayedComponents: .date) {
                 HStack{
-                    Text("Entries Date")
+                    Spacer()
+                    Text("Time Entries Date:")
                         .bold()
                 }
-            }
-            .padding(.horizontal)
+            }.padding(.horizontal)
             if(viewModel.loading == true){
                 ProgressView()
             }else if(viewModel.error != nil){
@@ -60,6 +60,12 @@ struct ListView: View {
             }else if(viewModel.timeEntries.count == 0){
                 Text("No time entries for today")
             }else{
+                HStack{
+                    Spacer()
+                    Text("Time Logged Today:").bold()
+                    DurationView(duration: viewModel.getTotalDuration())
+                }
+                .padding(.horizontal)
                 List {
                     ForEach(viewModel.timeEntries) { item in
                         TimeEntryView(description: item.description, start: item.start, stop: item.stop, issueKey: item.issueKey, duration: item.durationStr, sync: item.sync)

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6A214A4D27AD39BC00EA915C /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A214A4C27AD39BC00EA915C /* Double.swift */; };
 		6A29ECEA27B1D14200AE5056 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A29ECE927B1D14200AE5056 /* SettingsStore.swift */; };
+		6A2D31BF27BA78B50040EFD3 /* DurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D31BE27BA78B50040EFD3 /* DurationView.swift */; };
 		6A3C7FD827AAA8A800D6031C /* TimeEntriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C7FD727AAA8A800D6031C /* TimeEntriesModel.swift */; };
 		6A3C7FDE27AAA9DE00D6031C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C7FDD27AAA9DE00D6031C /* String.swift */; };
 		6A56D69F27AA842D009A4B5C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A56D69E27AA842D009A4B5C /* Network.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		6A214A4C27AD39BC00EA915C /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		6A29ECE927B1D14200AE5056 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		6A2D31BE27BA78B50040EFD3 /* DurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationView.swift; sourceTree = "<group>"; };
 		6A3C7FD727AAA8A800D6031C /* TimeEntriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeEntriesModel.swift; sourceTree = "<group>"; };
 		6A3C7FDD27AAA9DE00D6031C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		6A56D69E27AA842D009A4B5C /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				6A6EB70827ABCF0100CCE1AE /* SettingsView.swift */,
 				6A8F15F327AAD93E0013F47F /* ListView.swift */,
 				6A8F15F127AACDAF0013F47F /* TimeEntryView.swift */,
+				6A2D31BE27BA78B50040EFD3 /* DurationView.swift */,
 				6A3C7FD727AAA8A800D6031C /* TimeEntriesModel.swift */,
 				6A5F7D7627AA7BAC00BED514 /* Assets.xcassets */,
 				6A5F7D7B27AA7BAC00BED514 /* Persistence.swift */,
@@ -340,6 +343,7 @@
 				6A6EB70927ABCF0100CCE1AE /* SettingsView.swift in Sources */,
 				6A5F7D7F27AA7BAC00BED514 /* TogglTempoSync.xcdatamodeld in Sources */,
 				6A5F7D7327AA7BAB00BED514 /* TogglTempoSyncApp.swift in Sources */,
+				6A2D31BF27BA78B50040EFD3 /* DurationView.swift in Sources */,
 				6A6AAE8B27AC93BB008421F3 /* Regex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
