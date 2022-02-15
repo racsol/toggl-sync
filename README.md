@@ -11,6 +11,20 @@ To use this project you will need:
 - Tempo Key
 - Jira key
 
+## APIs that this app is using
+
+Toogl API
+
+- https://github.com/toggl/toggl_api_docs
+
+Jira MySelf API
+
+- https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-myself/
+
+Tempo API
+
+- https://apidocs.tempo.io
+
 ## Sample
 
 ![Screenshot](app_screenshot.png)
