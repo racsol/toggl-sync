@@ -14,8 +14,6 @@ struct TimeEntryView: View {
     let issueKey: String?
     let duration: String?
     let sync: Bool
-    @State var animate = false
-    
     
     var body: some View {
         VStack(spacing: 0){
@@ -26,23 +24,14 @@ struct TimeEntryView: View {
                         .bold()
                 }
                 
-                if (sync) {
-                    Image(systemName: "checkmark.icloud.fill")
-                        .foregroundColor(.green)
-                } else {
-                    Image(systemName: "xmark.icloud.fill")
-                        .foregroundColor(.red)
-                }
+                SyncInfoView(serviceName: "Jira Tempo", sync: sync)
                 
                 Spacer()
                 
                 if let duration = duration {
                     DurationView(duration: duration)
                 } else {
-                    ZStack {
-                        Circle().fill(Color.green.opacity(0.35)).frame(width: 25, height: 25).scaleEffect(self.animate ? 1 : 0)
-                        Circle().fill(Color.green).frame(width: 10, height: 10)
-                    }.animation(Animation.linear(duration: 1.5).repeatForever(autoreverses: true), value: animate)
+                    RunningAnimView()
                 }
             }
             .padding(.bottom, 5)
@@ -58,9 +47,6 @@ struct TimeEntryView: View {
         .padding()
         .background(Color(UIColor.systemGray5))
         .cornerRadius(5)
-        .onAppear{
-            animate.toggle()
-        }
     }
 }
 

@@ -24,6 +24,8 @@
 		6A5F7D9527AA7BAD00BED514 /* TogglTempoSyncUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5F7D9427AA7BAD00BED514 /* TogglTempoSyncUITestsLaunchTests.swift */; };
 		6A6AAE8B27AC93BB008421F3 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6AAE8A27AC93BB008421F3 /* Regex.swift */; };
 		6A6EB70927ABCF0100CCE1AE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6EB70827ABCF0100CCE1AE /* SettingsView.swift */; };
+		6A7F1A4327BDB8B2000C7537 /* SyncInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7F1A4227BDB8B2000C7537 /* SyncInfoView.swift */; };
+		6A7F1A4527BDBA19000C7537 /* RunningAnimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7F1A4427BDBA19000C7537 /* RunningAnimView.swift */; };
 		6A82647027B3222300EF3FF2 /* NetworkAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A82646F27B3222300EF3FF2 /* NetworkAuth.swift */; };
 		6A8F15F227AACDAF0013F47F /* TimeEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8F15F127AACDAF0013F47F /* TimeEntryView.swift */; };
 		6A8F15F427AAD93E0013F47F /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8F15F327AAD93E0013F47F /* ListView.swift */; };
@@ -70,6 +72,8 @@
 		6A5F7DA127AA7BEF00BED514 /* TogglTempoSync.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TogglTempoSync.entitlements; sourceTree = "<group>"; };
 		6A6AAE8A27AC93BB008421F3 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 		6A6EB70827ABCF0100CCE1AE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		6A7F1A4227BDB8B2000C7537 /* SyncInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncInfoView.swift; sourceTree = "<group>"; };
+		6A7F1A4427BDBA19000C7537 /* RunningAnimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningAnimView.swift; sourceTree = "<group>"; };
 		6A82646F27B3222300EF3FF2 /* NetworkAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAuth.swift; sourceTree = "<group>"; };
 		6A8F15F127AACDAF0013F47F /* TimeEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeEntryView.swift; sourceTree = "<group>"; };
 		6A8F15F327AAD93E0013F47F /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -163,6 +167,8 @@
 				6A6EB70827ABCF0100CCE1AE /* SettingsView.swift */,
 				6A8F15F327AAD93E0013F47F /* ListView.swift */,
 				6A8F15F127AACDAF0013F47F /* TimeEntryView.swift */,
+				6A7F1A4427BDBA19000C7537 /* RunningAnimView.swift */,
+				6A7F1A4227BDB8B2000C7537 /* SyncInfoView.swift */,
 				6A2D31BE27BA78B50040EFD3 /* DurationView.swift */,
 				6A3C7FD727AAA8A800D6031C /* TimeEntriesModel.swift */,
 				6A5F7D7627AA7BAC00BED514 /* Assets.xcassets */,
@@ -337,8 +343,10 @@
 				6A214A4D27AD39BC00EA915C /* Double.swift in Sources */,
 				6A8F15F227AACDAF0013F47F /* TimeEntryView.swift in Sources */,
 				6A82647027B3222300EF3FF2 /* NetworkAuth.swift in Sources */,
+				6A7F1A4527BDBA19000C7537 /* RunningAnimView.swift in Sources */,
 				6A9943B027ADA31C0012940C /* Models.swift in Sources */,
 				6A29ECEA27B1D14200AE5056 /* SettingsStore.swift in Sources */,
+				6A7F1A4327BDB8B2000C7537 /* SyncInfoView.swift in Sources */,
 				6A8F15F627AADC690013F47F /* Date.swift in Sources */,
 				6A6EB70927ABCF0100CCE1AE /* SettingsView.swift in Sources */,
 				6A5F7D7F27AA7BAC00BED514 /* TogglTempoSync.xcdatamodeld in Sources */,
