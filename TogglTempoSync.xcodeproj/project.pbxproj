@@ -57,7 +57,7 @@
 		6A3C7FD727AAA8A800D6031C /* TimeEntriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeEntriesModel.swift; sourceTree = "<group>"; };
 		6A3C7FDD27AAA9DE00D6031C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		6A56D69E27AA842D009A4B5C /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		6A5F7D6F27AA7BAB00BED514 /* TogglTempoSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TogglTempoSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A5F7D6F27AA7BAB00BED514 /* Toggl Tempo Sync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toggl Tempo Sync.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5F7D7227AA7BAB00BED514 /* TogglTempoSyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglTempoSyncApp.swift; sourceTree = "<group>"; };
 		6A5F7D7427AA7BAB00BED514 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6A5F7D7627AA7BAC00BED514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 		6A5F7D7027AA7BAB00BED514 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A5F7D6F27AA7BAB00BED514 /* TogglTempoSync.app */,
+				6A5F7D6F27AA7BAB00BED514 /* Toggl Tempo Sync.app */,
 				6A5F7D8427AA7BAD00BED514 /* TogglTempoSyncTests.xctest */,
 				6A5F7D8E27AA7BAD00BED514 /* TogglTempoSyncUITests.xctest */,
 			);
@@ -221,7 +221,7 @@
 			);
 			name = TogglTempoSync;
 			productName = TogglTempoSync;
-			productReference = 6A5F7D6F27AA7BAB00BED514 /* TogglTempoSync.app */;
+			productReference = 6A5F7D6F27AA7BAB00BED514 /* Toggl Tempo Sync.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6A5F7D8327AA7BAD00BED514 /* TogglTempoSyncTests */ = {
@@ -530,7 +530,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.iptvapp.TogglTempoSync;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Toggl Tempo Sync";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -564,7 +564,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.iptvapp.TogglTempoSync;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Toggl Tempo Sync";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
