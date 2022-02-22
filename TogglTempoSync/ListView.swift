@@ -19,6 +19,18 @@ struct ListView: View {
     func sync() async {
         await viewModel.sync(date: date)
     }
+    
+    func prevDay() {
+        if let prevDay = Calendar.current.date(byAdding: .day, value: -1, to: date) {
+            date = prevDay
+        }
+    }
+    
+    func nextDay() {
+        if let nextDay = Calendar.current.date(byAdding: .day, value: 1, to: date) {
+            date = nextDay
+        }
+    }
 
     var body: some View {
         VStack{
@@ -46,13 +58,30 @@ struct ListView: View {
                 .buttonStyle(.borderedProminent)
             }
             .padding()
-            DatePicker(selection: $date, in: ...Date(), displayedComponents: .date) {
-                HStack{
-                    Spacer()
-                    Text("Time Entries Date:")
-                        .bold()
+            HStack{
+                Button(action:prevDay){
+                    Image(systemName: "chevron.left")
+                    Text("prev")
                 }
-            }.padding(.horizontal)
+                .buttonStyle(.bordered)
+                .controlSize(.mini)
+                
+                Button(action:nextDay){
+                    Text("next")
+                    Image(systemName: "chevron.right")
+                }
+                .buttonStyle(.bordered)
+                .controlSize(.mini)
+                
+                DatePicker(selection: $date, in: ...Date(), displayedComponents: .date) {
+                    HStack{
+                        Spacer()
+                        Text("Time Entries Date:")
+                            .bold()
+                    }
+                }
+            }
+            .padding(.horizontal)
             if(viewModel.loading == true){
                 ProgressView()
             }else if(viewModel.error != nil){
