@@ -32,8 +32,8 @@ class TimeEntriesModel: ObservableObject {
         var jiraIssueKey: String?
         // Official regular expression from atlassian
         // https://confluence.atlassian.com/stashkb/integrating-with-custom-jira-issue-key-313460921.html
-        if let m = string?.match("((?<!([A-Z]{1,10})-?)[A-Z]+-\\d+)")[0][0]{
-            jiraIssueKey = m
+        if let match = string?.match("((?<!([A-Z]{1,10})-?)[A-Z]+-\\d+)").first {
+            jiraIssueKey = match[0]
         }
         return jiraIssueKey
     }
