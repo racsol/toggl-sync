@@ -102,9 +102,6 @@ struct ListView: View {
                     }
                 }
                 .listStyle(.plain)
-                .refreshable {
-                    await viewModel.reload(date: date)
-                }
             }
             Spacer()
         }
