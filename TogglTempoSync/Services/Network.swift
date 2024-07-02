@@ -40,7 +40,7 @@ class Network {
         iso8601DateFormatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
         let startDate = iso8601DateFormatter.string(from: date.startOfDay)
         let endDate = iso8601DateFormatter.string(from: date.endOfDay)
-        guard let url = URL(string: "https://api.track.toggl.com/api/v8/time_entries?start_date=\(startDate)&end_date=\(endDate)") else { throw NetworkError.missingUrl }
+        guard let url = URL(string: "https://api.track.toggl.com/api/v9/me/time_entries?start_date=\(startDate)&end_date=\(endDate)") else { throw NetworkError.missingUrl }
                 
         var urlRequest = URLRequest(url: url)
         urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -61,7 +61,7 @@ class Network {
     
     func putStopToggleTimeEntry(timeEntryId: Int) async throws -> Void {
         let auth = await NetworkAuth().getTogglAuthHeader()
-        guard let url = URL(string: "https://api.track.toggl.com/api/v8/time_entries/\(timeEntryId)/stop") else { throw NetworkError.missingUrl }
+        guard let url = URL(string: "https://api.track.toggl.com/api/v9/time_entries/\(timeEntryId)/stop") else { throw NetworkError.missingUrl }
                 
         var urlRequest = URLRequest(url: url)
         urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")

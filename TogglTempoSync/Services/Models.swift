@@ -10,7 +10,6 @@ import Foundation
 // Toggl
 struct TogglTimeEntry: Identifiable, Decodable {
     let id: Int
-    let guid: String
     let wid: Int
     let pid: Int?
     let billable: Bool
